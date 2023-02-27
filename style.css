@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Open Sans",sans-serif;
+    background-color: rgb(241, 245, 248);
+    line-height: 1.5;
+}
+
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+a {
+    
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+
+section {
+    max-width: 1024px;
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 36px;
+    
+}
+.about-title h1 {
+    color: #102A42;
+    letter-spacing: 4px;
+    font-size: 40px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 12px;
+
+}
+.about-title p {
+    color: rgb(97, 125, 152);
+    font-size: 16px;
+    opacity: .8;
+    letter-spacing: 1px;
+}
+
+.about-center {
+    display: flex;
+    gap: 20px;
+}
+.about-center .image {
+    flex: 1;
+    height: 20rem;
+    border-radius: 8px;
+}
+.about-center .about-center-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.about-center-right .buttons {
+    display: flex;
+
+}
+
+
+
+.btn {
+   flex: 1; 
+   color: #102A42;
+   background-color: rgb(218, 226, 236);
+   height: 50px;
+   padding: 16px 0px;
+   border: none;
+   letter-spacing: 2px;
+   text-transform: capitalize;
+   font-size: 16px;
+   margin-bottom: 12px;
+}
+.btn:hover:not(.active) {
+    color: #49A6ED;
+    background-color: rgb(235, 247, 255);
+    transition: all 250ms linear;
+}
+
+.about-center-right .content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px;
+    display: none;
+}
+.about-center-right .content h2 {
+    color: #102A42;
+    letter-spacing: 1.5px;
+    font-size: 16px;
+    text-transform: capitalize;
+    margin-bottom: 4px;
+}
+
+.about-center-right .content p {
+    color: rgb(97, 125, 152);
+    
+    font-size: 16px;
+    line-height: 1.75;
+}
+
+.active {
+    background-color: white;
+    transition: all 250ms linear;
+    
+    display: block !important;
+}
+
